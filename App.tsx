@@ -6,8 +6,9 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
     <View style={{padding:10}}>
-    <TaskListItem />
-
+    <TaskListItem task={{description:'First Task'}}/>
+    <TaskListItem task={{description:'Second Task'}}/>
+    <TaskListItem task={{description:'Third Task'}}/>
     </View>
     </SafeAreaView>
   );
