@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, StatusBar } from 'react-native';
+import TaskListItem from './src/components/TaskListItem';
+import { Platform } from 'expo-modules-core';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <SafeAreaView style={styles.container}>
+    <View style={{padding:10}}>
+    <TaskListItem />
+
     </View>
+    </SafeAreaView>
   );
 }
 
@@ -14,7 +17,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop:Platform.OS==="android"? StatusBar.currentHeight:0,
   },
 });
