@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
             borderRadius:5,
             flexDirection:'row',
             justifyContent:'space-between',
+            margin:5
         },
     text:{
         color:'white',
