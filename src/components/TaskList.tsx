@@ -4,16 +4,16 @@ import { useState } from 'react';
 
 export default function TaskList(){
     const [tasks,setTasks] = useState([
-        {description:'First Task'},
-        {description:'Second Task'},
-        {description:'Third Task'},
-        {description:'Four Task'},
+        {id:"123",description:'First Task'},
+        {id:"124",description:'Second Task'},
+        {id:"125",description:'Third Task'},
+        {id:"126",description:'Four Task'},
     ]);
     const [newTask, setNewTask] = useState('');
 
     const createTask =() =>{
-
-        setTasks([...tasks,{description:newTask}])
+        //Need to be fixed in the next commit, the video not should this yet
+        setTasks([...tasks,{id:"0", description:newTask}])
         setNewTask('');
     }
 
