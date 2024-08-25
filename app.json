@@ -2,7 +2,7 @@
   "expo": {
     "name": "Trello",
     "slug": "Trello",
-    "scheme": "my-trello",    
+    "scheme": "my-trello",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -22,13 +22,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tiago.silva.analista.Trello"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "40326001-887a-4845-aa2a-d66fe8ef7ffc"
+      }
+    }
   }
 }
