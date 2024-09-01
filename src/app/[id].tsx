@@ -1,13 +1,27 @@
 import {View,Text} from 'react-native';
 import { Stack, useLocalSearchParams } from 'expo-router';
+import { TaskRealmContext } from '../providers/Realm';
+import { Task } from '../models/Task';
+import { BSON } from 'realm';
+import { getObjectForPrimaryKey } from '@realm/react/dist/helpers';
 
 const TaskDetails = () => {
 
     const {id} = useLocalSearchParams();
+
+    const {useRealm, useObject, useQuery} = TaskRealmContext;
+    const realm = useRealm();
+
+    const task = useQuery(Task).filtered("_id==$0",new BSON.ObjectId(id))[0];
+    //const task = realm.objectForPrimaryKey(Task,new BSON.ObjectID(id));
+    //const task = useObject<Task>(Task,new BSON.ObjectID(id as string));
+
+    if(!task) { return <Text>Not Found.</Text>}
     return(
         <View style={{padding:10}}>
             <Stack.Screen options={{title:'Task Details'}} />
             <Text style={{color: 'white', fontSize:20}}>ID: {id}</Text>
+            <Text style={{color: 'white', fontSize:20}}>Description: {task.description}</Text>
         </View>
     )
 }

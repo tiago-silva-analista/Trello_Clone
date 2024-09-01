@@ -2,15 +2,19 @@ import { Text } from "react-native";
 import {StatusBar} from 'expo-status-bar';
 import {Stack} from 'expo-router';
 import {ThemeProvider, DarkTheme} from '@react-navigation/native'
-import RealmCustomProvider from "../providers/Realm";
+import { RealmProvider } from "@realm/react";
+import  {TaskRealmContext}  from "../providers/Realm";
+
 
 export default function RootLayout(){
 
+    const {RealmProvider} = TaskRealmContext;
+
     return(
         <ThemeProvider value={DarkTheme}>
-        <RealmCustomProvider>
+        <RealmProvider>
             <Stack />
-        </RealmCustomProvider>
+        </RealmProvider>        
         <StatusBar style="light" />
         </ThemeProvider>
     )

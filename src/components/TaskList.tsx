@@ -1,19 +1,29 @@
 import{View,Text, FlatList, TextInput, Button, StyleSheet} from 'react-native';
 import TaskListItem from './TaskListItem';
 import { useState } from 'react';
-
+import {Task} from '../models/Task';
+import { TaskRealmContext } from '../providers/Realm';
 export default function TaskList(){
-    const [tasks,setTasks] = useState([
-        {id:"123",description:'First Task'},
-        {id:"124",description:'Second Task'},
-        {id:"125",description:'Third Task'},
-        {id:"126",description:'Four Task'},
-    ]);
+
+    const {useRealm, useQuery} = TaskRealmContext;
+
+    const realm = useRealm();
+    const tasks = useQuery(Task);
+
+    // const [tasks,setTasks] = useState([
+    //     {id:"123",description:'First Task'},
+    //     {id:"124",description:'Second Task'},
+    //     {id:"125",description:'Third Task'},
+    //     {id:"126",description:'Four Task'},
+    // ]);
     const [newTask, setNewTask] = useState('');
 
     const createTask =() =>{
+        realm.write(() =>{
+            realm.create(Task,{description:newTask, user_id:'1235'})
+        })
         //Need to be fixed in the next commit, the video not should this yet
-        setTasks([...tasks,{id:"0", description:newTask}])
+        //setTasks([...tasks,{id:"0", description:newTask}])
         setNewTask('');
     }
 
