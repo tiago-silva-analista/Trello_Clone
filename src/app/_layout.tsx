@@ -11,11 +11,14 @@ export default function RootLayout(){
     const {RealmProvider} = TaskRealmContext;
 
     return(
+        <>
         <ThemeProvider value={DarkTheme}>
         <RealmProvider>
             <Stack />
-        </RealmProvider>        
-        <StatusBar style="light" />
+        </RealmProvider>          
         </ThemeProvider>
+        
+        <StatusBar style="light" />
+        </>
     )
 }
