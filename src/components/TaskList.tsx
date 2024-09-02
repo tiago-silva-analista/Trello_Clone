@@ -3,19 +3,12 @@ import TaskListItem from './TaskListItem';
 import { useState } from 'react';
 import {Task} from '../models/Task';
 import { TaskRealmContext } from '../providers/Realm';
+import { useRealm, useQuery } from '@realm/react';
 export default function TaskList(){
-
-    const {useRealm, useQuery} = TaskRealmContext;
 
     const realm = useRealm();
     const tasks = useQuery(Task);
 
-    // const [tasks,setTasks] = useState([
-    //     {id:"123",description:'First Task'},
-    //     {id:"124",description:'Second Task'},
-    //     {id:"125",description:'Third Task'},
-    //     {id:"126",description:'Four Task'},
-    // ]);
     const [newTask, setNewTask] = useState('');
 
     const createTask =() =>{

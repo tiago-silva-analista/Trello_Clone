@@ -1,17 +1,16 @@
-import {View,Text, TextInput} from 'react-native';
+import {View,Text, TextInput} from 'react-native'
 import { Stack, useLocalSearchParams } from 'expo-router';
 import { TaskRealmContext } from '../providers/Realm';
 import { Task } from '../models/Task';
 import { BSON } from 'realm';
 import { getObjectForPrimaryKey } from '@realm/react/dist/helpers';
 import { useState } from 'react';
-
+import { useRealm, useQuery, useObject } from '@realm/react';
 const TaskDetails = () => {
 
     const {id} = useLocalSearchParams();
-    const {useRealm, useObject, useQuery} = TaskRealmContext;
     const realm = useRealm();
-    const task = useQuery(Task).filtered("_id==$0",new BSON.ObjectId(id))[0];
+    const task = useObject<Task>(Task, new BSON.ObjectID(id as string));
 
     const [updatedDescription, setUpdatedDescription] = useState(task.description);
 

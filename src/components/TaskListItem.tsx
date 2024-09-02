@@ -3,10 +3,9 @@ import {AntDesign} from '@expo/vector-icons';
 import { Link } from 'expo-router';
 import { TaskRealmContext } from '../providers/Realm';
 import { Task } from '../models/Task';
+import { useRealm, useQuery } from '@realm/react';
 
 export default function TaskListItem({task} : {task: Task}){
-
-    const {useRealm, useQuery} = TaskRealmContext;
 
     const realm = useRealm();
     const deleteTask = () => {
