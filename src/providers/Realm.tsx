@@ -3,7 +3,7 @@ import { RealmProvider, AppProvider, UserProvider } from '@realm/react';
 import { Task } from '../models/Task';
 import Login from '../components/Login';
 
-const appId = 'trello-mjcyr';
+const appId = 'trello-ibudche';
 
 
 export default function RealmCustomProvider({ children }: PropsWithChildren) {
@@ -12,6 +12,18 @@ export default function RealmCustomProvider({ children }: PropsWithChildren) {
         <UserProvider fallback={Login}>
           <RealmProvider
             schema={[Task]}
+            sync={{
+              flexible: true,
+              onError:(_session,error) =>{
+                console.log(error);
+              },
+              initialSubscriptions: {
+                update(subs, realm) {
+                  subs.add(realm.objects('Task'));
+                },
+                rerunOnOpen: true,
+              },
+            }}
           >
             {children}
           </RealmProvider>
