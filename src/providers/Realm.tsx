@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
 import { RealmProvider, AppProvider, UserProvider } from '@realm/react';
 import { Task } from '../models/Task';
-import Login from '../components/Login';
+import AnonymousLogin from '../components/AnonymousLogin';
 
 const appId = 'trello-ibudche';
 
@@ -9,7 +9,7 @@ const appId = 'trello-ibudche';
 export default function RealmCustomProvider({ children }: PropsWithChildren) {
   return (
       <AppProvider id={appId}>
-        <UserProvider fallback={Login}>
+        <UserProvider fallback={AnonymousLogin}>
           <RealmProvider
             schema={[Task]}
             sync={{
