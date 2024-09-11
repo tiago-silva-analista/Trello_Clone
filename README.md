@@ -32,11 +32,14 @@ We are using **Realm** to create a local schema applying the concepts of offline
 <p align="center">
   <img src="demo-resize.gif" alt="animated" />
 </p>
-![Home] <img src="https://github.com/user-attachments/assets/ce272625-9383-4822-bc5b-2f8fcb0e05d8" width="200">
+![Home] 
+  <img src="https://github.com/user-attachments/assets/ce272625-9383-4822-bc5b-2f8fcb0e05d8" width="200">
 
-![Task Added] <img src="https://github.com/user-attachments/assets/2ba7deae-48d4-4edc-a945-e4f8a50d4e16" width="200">
+![Task Added] 
+  <img src="https://github.com/user-attachments/assets/2ba7deae-48d4-4edc-a945-e4f8a50d4e16" width="200">
 
-![Task Added 2] <img src="https://github.com/user-attachments/assets/3a913db6-6bda-4140-8f68-d4613bd78f92" width="200">
+![Task Added 2] 
+  <img src="https://github.com/user-attachments/assets/3a913db6-6bda-4140-8f68-d4613bd78f92" width="200">
 
 ![Login] <img src="https://github.com/user-attachments/assets/fc9ebc98-842a-41f6-9c38-a9ac2929d566" width="200">
 
