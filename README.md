@@ -5,7 +5,7 @@
   <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-# :house: Welcome to "Trello Clon" Project!
+# :house: Welcome to "Trello Clone" Project!
 
 The project is an application to help people to manage tasks. It is a kind of facilitator to help the user managing tasks on the mobile application saving the data in a concept offline first.
 
@@ -15,7 +15,7 @@ To see the result [click here](https://google.com/).
 
 ## :rocket: Technologies
 
-This project was developed at the NotJust.Dev youtube channel based on the technologies:
+This project was developed at the NotJust.Dev (https://www.youtube.com/watch?v=WiXs0JbA3_k) youtube channel based on the technologies:
 
 - [React-Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
