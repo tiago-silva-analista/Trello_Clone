@@ -32,7 +32,7 @@ We are using **Realm** to create a local schema applying the concepts of offline
 <p align="center">
   <img src="demo-resize.gif" alt="animated" />
 </p>
-![Home](https://github.com/user-attachments/assets/ce272625-9383-4822-bc5b-2f8fcb0e05d8)
+![Home](https://github.com/user-attachments/assets/ce272625-9383-4822-bc5b-2f8fcb0e05d8 |width="600" height="400")
 
 ![Task Added](https://github.com/user-attachments/assets/2ba7deae-48d4-4edc-a945-e4f8a50d4e16)
 
