@@ -15,7 +15,7 @@ To see the result [click here](https://google.com/).
 
 ## :rocket: Technologies
 
-This project was developed at the NotJust.Dev (https://www.youtube.com/watch?v=WiXs0JbA3_k) youtube channel based on the technologies:
+This project was developed at the [NotJust.Dev] (https://www.youtube.com/watch?v=WiXs0JbA3_k) youtube channel based on the technologies:
 
 - [React-Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
