@@ -32,12 +32,12 @@ We are using **Realm** to create a local schema applying the concepts of offline
 <p align="center">
   <img src="demo-resize.gif" alt="animated" />
 </p>
-![Screenshot_20240911_190427_Trello 1](https://github.com/user-attachments/assets/ce272625-9383-4822-bc5b-2f8fcb0e05d8)
-![Screenshot_20240911_190437_Trello 1](https://github.com/user-attachments/assets/2ba7deae-48d4-4edc-a945-e4f8a50d4e16)
-![Screenshot_20240911_190433_Trello 1](https://github.com/user-attachments/assets/3a913db6-6bda-4140-8f68-d4613bd78f92)
-![Screenshot_20240911_190456_Trello 1](https://github.com/user-attachments/assets/fc9ebc98-842a-41f6-9c38-a9ac2929d566)
-![Screenshot_20240911_190452_Trello 1](https://github.com/user-attachments/assets/7bc9641d-8a1c-4f76-915a-624f7428e377)
-![Screenshot_20240911_190447_Trello 1](https://github.com/user-attachments/assets/8600a20c-5fd6-4396-af8e-6c7a567d24b9)
+![Home](https://github.com/user-attachments/assets/ce272625-9383-4822-bc5b-2f8fcb0e05d8)
+![Task Added](https://github.com/user-attachments/assets/2ba7deae-48d4-4edc-a945-e4f8a50d4e16)
+![Task Added 2](https://github.com/user-attachments/assets/3a913db6-6bda-4140-8f68-d4613bd78f92)
+![Login](https://github.com/user-attachments/assets/fc9ebc98-842a-41f6-9c38-a9ac2929d566)
+![Profile](https://github.com/user-attachments/assets/7bc9641d-8a1c-4f76-915a-624f7428e377)
+![Task Details](https://github.com/user-attachments/assets/8600a20c-5fd6-4396-af8e-6c7a567d24b9)
 
 
 
