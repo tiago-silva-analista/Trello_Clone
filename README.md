@@ -32,3 +32,22 @@ We are using **Realm** to create a local schema applying the concepts of offline
 <p align="center">
   <img src="demo-resize.gif" alt="animated" />
 </p>
+
+
+## :electric_plug: Install
+
+To install use the command below:
+
+- npm install
+- yarn install
+- expo install
+- npm install -g eas-cli
+- npx expo prebuild
+- npx expo install realm @realm/react
+- eas build --profile development --platform android
+- *This command will generate a apk installable on android as a dev mode
+
+- npm start -- --clear
+  * This command will generate a QRCode that should be read by the device that has the application installed as development mode
+
+- Android App deployed on expo: https://expo.dev/artifacts/eas/5HoJCyovzCRkDT8RNxpnpP.aab
